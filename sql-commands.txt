@@ -1,0 +1,6 @@
+create table users (
+    id BIGSERIAL not null primary key,
+    username VARCHAR(50) not null unique,
+    password VARCHAR(300) not null,
+    roles VARCHAR[]
+);
